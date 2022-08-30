@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <section class="container">
+        <div class="form">
+            <span class="title">Currency Converter</span>
+            <form class="conversion-form">
+                <div class="from">
+                    <input type="text" id="amountFrom" placeholder="Enter amount">
+                    <select id="currencyFrom">
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="RWF">RWF</option>
+                        <option value="USD">USD</option>
+                    </select>
+                </div>
+                <input type="text" id="rate" placeholder="Rate" disabled>
+                <div class="to">
+                    <input type="text" id="amountTo" placeholder="Converted amount" disabled>
+                    <select id="currencyTo">
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="RWF">RWF</option>
+                        <option value="USD">USD</option>
+                    </select>
+                </div>
+                <button class="button" id="convert">Convert</button>
+            </form>
+        </div>
+    </section>
+    <script src="./app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
